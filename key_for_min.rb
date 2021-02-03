@@ -4,16 +4,4 @@
 def key_for_min_value(name_hash)
 
   min_value = hash.min_by {|k,v| v}
-  unless min_value == nil 
-    min_value.first 
-  lowest_key = nil
-  lowest_value = nil
-  hash.each do |k, v|
-    if lowest_value == nil || v < lowest_value
-      lowest_value = v
-      lowest_key = k
-    end
-  end
-end 
-  lowest_key
-end
+ 
